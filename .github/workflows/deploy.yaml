@@ -15,8 +15,8 @@ jobs:
         with:
           node-version: 25
       - run: npm ci && npm run build
-  deploy:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
+  deploy:
       - uses: actions/deploy-pages@v4
