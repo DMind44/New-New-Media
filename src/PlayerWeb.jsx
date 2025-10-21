@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 // configure how many frames you shipped
 const FRAME_COUNT = 80; // change if you have more/less
-const FRAME_PREFIX = "/frames/frame_"; // served from public/
+const FRAME_PREFIX = import.meta.env.BASE_URL + "frames/frame_";
 const DURATION_MS = 2000; // 2s crossfade
 
 const pad = (n) => n.toString().padStart(6, "0");
