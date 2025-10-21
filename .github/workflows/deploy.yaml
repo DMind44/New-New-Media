@@ -17,5 +17,5 @@ jobs:
       - run: npm ci && npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: electron-app/renderer/dist
+          path: electron-app/dist
       - uses: actions/deploy-pages@v4
